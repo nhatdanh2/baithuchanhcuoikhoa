@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Previous styles ... */
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #192734;
+        }
+
+        .twitter-logo {
+            height: 40px;
+            width: 40px;
+            background: url('path/to/twitter-logo.png') no-repeat center;
+            background-size: contain;
+        }
+
+        .shopping-cart {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-dropdown {
+            position: absolute;
+            right: 0;
+            top: 40px;
+            width: 150px;
+            background-color: #253341;
+            border: 1px solid #657786;
+            border-radius: 5px;
+            display: none;
+            color: #FFFFFF;
+        }
+
+        .shopping-cart:hover .cart-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="top-bar">
+    <div class="twitter-logo"></div>
+    <div class="shopping-cart">
+        🛒
+        <div class="cart-dropdown">
+            <p>Item 1</p>
+            <p>Item 2</p>
+            <p>Item 3</p>
+        </div>
+    </div>
+</div>
+
+<div class="login-form" style="margin-top: 80px;">
+    <!-- ... Rest of your login form ... -->
+</div>
+
+<script>
+    // Your JS logic...
+</script>
+
+</body>
+
+</html>

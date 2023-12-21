@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: italic 1.2em "Fira Sans", serif;
+}
+/*-----------------------header---------------------------*/
+body{
+    background-color: white;
+}
+#nav_container {   z-index: 1;
+    position:fixed;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(44, 78, 53);
+}
+.nav_sub{
+    max-width: 100%;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+}
+li > a{
+    padding: 8px ;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav_sub > li > a:hover{
+    background-color: coral;
+}
+.nav_sub > li{
+    padding-right:15px ;
+}
+.nav_sub li .fa-chevron-down{
+    transition: all 0.25s ease-in-out;
+    transform: rotate(180deg);
+    font-size: 12px;
+}
+.nav_sub > li > a:hover .fa-chevron-down{
+    transform: none;
+}
+#search{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    background-color: rgb(216, 175, 129);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.search {
+    transition: all 0.25s ease-in-out;
+    font-size: 18px;
+    width: 50%;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    outline: none;
+    border-radius: 12px;
+}
+.search:focus {
+    box-shadow: 0px 5px 5px 1px;
+    border: 2px solid #19cc19;
+    border-radius: 12px;
+}
+.shopping:hover{
+    transform: scale(1.1);
+    background-color: rgb(219, 104, 62);
+}
+.shopping{
+    transition: all 0.25s ease-in-out;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: coral;
+}
+a{
+text-decoration: none;
+}
+.user_login a{
+    font-size: 25px;
+    color: white;
+}
+.user_login p{
+    margin-left: 5px;
+}
+.user_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    padding: 3px;
+    font-size: 25px;
+    color: white;
+}
+#search .user_login a:hover{
+    color:  rgb(89, 182, 89);
+}
+#search .user_login:hover{
+    color:  rgb(89, 182, 89);
+}
+/*-----------------------Chậu Cây---------------------------*/
+.name_tree{
+    position: relative;
+}
+#name_plant > li > a{
+    
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#name_plant li:hover a{
+    color: rgb(255, 123, 74);
+
+}
+#name_plant{
+    padding: 5px;
+    width: 160px;
+}
+#name_plant{
+    opacity: 0;
+    position: absolute;
+    top: -1000%;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(252, 246, 246,0.9);
+    border: 1px solid black;
+}
+#nav_container li:hover #name_plant {
+    opacity: 1;
+    top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+}
+/*-----------------------Cây Trong Nhà---------------------------*/
+.plant_house{
+    border: 1px solid black;
+}
+.nav_sub .plant_house > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.plant_house li:hover a{
+    color: rgb(255, 123, 74);
+}
+.plant_house{
+    width: 200px;
+}
+.plant_house {
+    opacity: 0;
+    position: absolute;
+    top: -1000%;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(252, 246, 246,0.9);
+    border: 1px solid black;
+}
+#nav_container li:hover .plant_house{
+    opacity: 1;
+    top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+}
+/*-----------------------Cây Ngoài Trời---------------------------*/
+.plant_outhouse{
+    border: 1px solid black;
+}
+.nav_sub .plant_outhouse > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.plant_outhouse li:hover a{
+    color: rgb(255, 123, 74);
+}
+.plant_outhouse{
+    width: 200px;
+}
+.plant_outhouse {
+    opacity: 0;
+    position: absolute;
+    top: -1000%;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(252, 246, 246,0.9);
+    border: 1px solid black;
+}
+#nav_container li:hover .plant_outhouse{
+    opacity: 1;
+    top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+}
+/*----------------------Phụ Kiện Cho Cây---------------------------*/
+.plant_accessory{
+    border: 1px solid black;
+}
+.nav_sub .plant_accessory > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.plant_accessory li:hover a{
+    color: rgb(255, 123, 74);
+}
+.plant_accessory{
+    width: 160px;
+}
+.plant_accessory{
+    opacity: 0;
+    position: absolute;
+    top: -1000%;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(252, 246, 246,0.9);
+    border: 1px solid black;
+}
+#nav_container li:hover .plant_accessory{
+    opacity: 1;
+    top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+}
+/*-----------------------body---------------------------*/
+a{
+    text-decoration: none;
+}
+.item{
+    margin: 0 18%;
+    padding-top: 50px;
+}
+.text_item_product span{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.item .text_item_product span .html_1 a{
+    color: gray;
+}
+.item .text_item_product span .html_1:hover a{
+    color: #111;
+}
+.item .text_item_product{
+    display: flex;
+    align-items: center;
+}
+.item .text_item_product select{
+    margin-left: 266px;
+    padding: 10px;
+    font-size: 18px;
+}
+.item .text_item_product select{
+    border: none;
+    outline: none;
+    background-color: #fcf9f300;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.35);
+}
+.item .text_item_product h2{
+    padding: 10px;
+}
+/*-----------------------body---------------------------*/
+.shop_tree{
+    margin-top: 30px;
+    padding: 20px;
+}
+.shop_tree{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.shop_tree li .img_tree img{
+    transition: all 0.5s ease;
+    background-size: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+.shop_tree  li:hover img{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.shop_tree  li{
+    margin-bottom: 20px;
+    background-color: white;
+    flex-basis: 24%;
+}
+.img_tree{  
+    overflow: hidden;  
+    position: relative;
+}
+.shop_tree li .item_tree{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shop_tree li .item_tree .name_tree{
+    color: #224229;
+    margin-bottom: 10px;
+    font-family: "object-fit: cover;";
+    font-size: 18px;
+}
+.shop_tree li .img_tree{
+    
+    text-align: center;
+}
+.shop_tree li{
+    border-radius: 12px;
+    transition: all 0.25s ease;
+}
+.shop_tree li .img_tree .title_tree{
+    font-size: 22px;
+    opacity: 0;
+    bottom: -58px;
+    color: #fcf9f3;
+    transition: all 0.5s ease;
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(10, 133, 57, 0.63);
+    font-weight: bold;
+}
+.shop_tree li .item_tree .price_tree{
+    font-size: 22px;
+    color: #008749;
+}
+.shop_tree li:hover .title_tree{
+    opacity: 1;
+    bottom: 0;
+}
+.shopping_card{
+    transition: all 0.25s ease;
+    color: #33e433;
+    left: 3px;
+    top: -39px;
+    font-size: 40px;
+    text-decoration: none;
+    position: absolute;
+    display: inline-block;
+}
+.shop_tree li:hover .shopping_card{
+    top: 0;
+}
+.shop_tree li:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 10px 15px;
+}
+/*-----------------------body---------------------------*/
+ .number_page  a{
+    font-size: 17px;
+    color: black;
+}
+.number .number_page{
+    justify-content: center ;
+    display: flex;
+}
+.number .number_page li a{
+    margin: 1px;
+   border: 2px solid black;
+    border-radius: 99px;
+    display: block;
+    font-size: 17px;
+    height: 37px;
+    line-height: 34px;
+    min-width: 37px;
+    padding: 0 7px;
+    text-align: center;
+    transition: all .3s;
+    width: auto;
+}
+.number .number_page a{
+    color: white;
+    border-radius: 99px;
+    background-color: #008749;
+}
+.number .number_page .number_pick a{
+    background-color: #fcf9f3;
+    color: black;
+}
+.number_page li:hover a{
+    background-color: #fcf9f3;
+    color: black;
+}
+/*-----------------------body---------------------------*/
+#footer{
+    margin-top: 10px;
+    background-image: url(https://mowgarden.com/wp-content/uploads/2022/11/vuon-cay-canh-noi-that.jpg);
+     width: 100%;
+    position: absolute;
+    bottom: 0;
+     color: white;
+ }
+ .footer_sub{ 
+     padding: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+     height: 100%;
+     background-color: #1111117c;
+ }
+ .footer_1{
+     display: flex;
+     flex-direction: column;
+ }
+ .footer_3 h1,
+ .footer_2 h1,
+ .footer_1 h1{
+     font-weight: bold;
+     font-size:32px ;
+     color: rgba(227, 244, 247, 0.753);
+ }
+ .footer_3 .hr,
+ .footer_2 .hr,
+ .footer_1 div{
+     margin-top: 12px;
+     border-bottom: 3px solid white ;
+     width: 100px;
+ }
+ .footer_3 div,
+ .footer_2 div,
+ .footer_1  p{
+     margin-top: 12px;
+     font-size: 22px;
+ }
+ .footer_2{
+     width: 450px;
+ }
+ .footer_3 div,
+ .footer_2 div{
+     padding: 5px;
+     padding-bottom: 3px     ;
+     border-bottom: 1px solid white;
+     width: 100%;
+ }
+ .fa-angle-right{
+     padding-right: 5px;
+     color: #e7f7d8;
+     opacity: 0;
+ }
+ .footer_sub div div:hover .fa-angle-right{
+     opacity: 1;
+     transition: all 0.5s ease;
+ }
+ .footer_3 .icon i:hover{
+     transition: all 0.5s ease;
+     transform: scale(1.2);
+     opacity: 0.8;
+     color: rgb(113, 248, 147);
+ }
+ .footer_3 .icon{
+     border: none;
+     font-size: 40px;
+ }
+ .footer_end{
+     background-color: #022b0e;
+     font-size: 26px;
+     padding: 5px;
+     text-align: center;
+     color: gray;
+ }
